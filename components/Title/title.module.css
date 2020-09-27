@@ -1,0 +1,13 @@
+.title {
+    font-family: Courgette;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    white-space: pre-wrap;
+    color: var(--c-theme);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

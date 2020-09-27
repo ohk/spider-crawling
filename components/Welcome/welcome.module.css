@@ -1,0 +1,38 @@
+.title {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    white-space: pre-wrap;
+    padding: 20px;
+}
+.description {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    white-space: pre-wrap;
+    padding: 20px;
+}
+.little {
+    font-family: Courgette;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    white-space: pre-wrap;
+    color: var(--c-theme);
+    padding: 20px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    white-space: pre-wrap;
+    color: var(--c-primary-text);
+    padding: 20px;
+    margin: 20px;
+}

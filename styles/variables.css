@@ -1,0 +1,12 @@
+:root{
+    --c-background: #101321;
+    --c-theme:#FF7242;
+    --c-second-text: #979799;
+    --c-primary-text: #FFFFFF;
+    --c-second-background: #272D46;
+    --c-plan-spec: rgba(255,255,255,0.1);
+    --c-price-super: #FF6442;
+    --c-price-middle: #FF833D;
+    --c-price-little: #FF9D42;
+    --c-red: #FF0000;
+}

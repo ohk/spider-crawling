@@ -1,0 +1,37 @@
+.img{
+    border-radius: 50%;
+    width:180px;
+    height: 180px;
+    margin: 10px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: var(--c-primary-text);
+    border: 2px solid var(--c-second-text);
+    border-radius: 30px;
+    width: 400px;
+    margin: 20px;
+}
+
+.name{
+    font-size: 24px;
+    margin: 10px 10px 0;
+}
+
+.description{
+    margin: 10px;
+    padding: 20px;
+    height: 150px;
+}
+
+.title{
+    font-size: 20px;
+    color: var(--c-second-text);
+    margin: 0 5px 5px;
+}

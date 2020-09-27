@@ -1,15 +1,46 @@
 {
-  "name": "spider-crawling-final",
+  "name": "spider-crawling-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "icon": "svgr icons -d components/icons --icon --replace-attr-values \"#fff=currentColor\""
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-links": "^6.0.21",
+    "@storybook/react": "^6.0.21",
+    "@svgr/cli": "^5.4.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.3.0",
+    "postcss": "^8.0.6",
+    "postcss-loader": "^4.0.2",
+    "postcss-nested": "^4.2.3",
+    "prettier": "^2.1.2",
+    "react-is": "^16.13.1",
+    "storybook-css-modules-preset": "^1.0.2",
+    "style-loader": "^1.2.1"
   }
 }
