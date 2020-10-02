@@ -2,28 +2,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
 }
 
 html {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0em;
-  text-align: left;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--c-primary-text);
 }
 
 body {
-  font-size: 1rem;
-  background-color: var(--c-background);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 1rem;
+    background-color: var(--c-background);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
-a{
-  text-decoration: none;
-  color: currentColor;
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+[type='radio'] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }

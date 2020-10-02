@@ -1,5 +1,6 @@
 import React from 'react'
 import cn from 'classnames'
+import { v4 as uuidv4 } from 'uuid'
 
 import styles from './table.module.css'
 
@@ -13,10 +14,14 @@ function PriceTable({ className, item, children, ...props }) {
             <div className={styles.price} style={{ background: `var(${item.color})` }}>
                 {item.price}$<span className={styles.subscription}>/{item.subscription}</span>
             </div>
-            <div className={styles.spec} style={{ color: `var(${item.color})` }}>
+            <div className={styles.spec}>
                 {item.specs.map((spec) => {
                     return (
-                        <div className={cn(styles.innerspec)}>
+                        <div
+                            key={uuidv4()}
+                            style={spec.confirm && { backgroundColor: `var(${item.color}-50)` }}
+                            className={cn(styles.innerspec, !spec.confirm && styles.unconfirmP)}
+                        >
                             <span className={cn(styles.icon, !spec.confirm && styles.unconfirm)}>
                                 <Icon.Check />
                             </span>

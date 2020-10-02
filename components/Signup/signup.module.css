@@ -1,0 +1,151 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
+}
+.span {
+    padding: 10px;
+    display: block;
+}
+
+.label {
+    font-size: 24px;
+    color: var(--c-primary-text);
+    * {
+        margin: 10px;
+    }
+}
+
+.input {
+    border-radius: 10px;
+    background-color: var(--c-plan-spec);
+    border: 1px solid var(--c-primary-text);
+    width: 280px;
+    height: 40px;
+    color: var(--c-primary-text);
+    box-sizing: border-box;
+    padding-left: 20px;
+
+    &:active {
+        border-color: var(--c-red);
+    }
+
+    &::placeholder {
+        font-size: 18px;
+        color: var(--c-second-text);
+    }
+    &:focus {
+        border-color: var(--c-red);
+    }
+
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.iconInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        height: 1.5em;
+        width: 1.5em;
+    }
+}
+
+.creditCard {
+    background-color: var(--c-plan-spec);
+}
+
+.title {
+    font-size: 36px;
+}
+
+.btn {
+    cursor: pointer;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px 20px;
+    color: var(--c-second-text);
+    &:hover {
+        color: var(--c-theme);
+    }
+    background: var(--c-plan-spec);
+    border: 1px solid var(--c-second-text);
+    border-radius: 10px;
+    color: var(--c-primary-text);
+}
+
+.error {
+    color: var(--c-red);
+    font-size: 18px;
+    text-align: center;
+}
+
+.expiries {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.expiry {
+    width: 110px;
+}
+
+.plans {
+    display: flex;
+    flex-direction: column;
+}
+
+.planLb {
+    padding: 10px;
+    border: 3px solid var(--c-plan-spec);
+    color: var(--c-primary-text);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.checked {
+    background-color: var(--c-theme);
+    color: var(--c-background);
+}
+
+.attention {
+    color: var(--c-red);
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}

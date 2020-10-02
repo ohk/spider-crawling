@@ -34,7 +34,6 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: var(--c-plan-spec);
     margin-top: 10px;
     margin-bottom: 10px;
     color: currentColor;
@@ -45,6 +44,11 @@
 }
 
 .unconfirm {
+    color: var(--c-second-text);
+}
+
+.unconfirmP {
+    background-color: var(--c-plan-spec);
     color: var(--c-second-text);
 }
 

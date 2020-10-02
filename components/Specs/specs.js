@@ -6,7 +6,7 @@ function Specs({ specs, className, children, ...props }) {
     return (
         <div className={styles.specs} {...props}>
             {specs.map((item) => {
-                return <Spec item={item} />
+                return <Spec key={item.id} item={item} />
             })}
         </div>
     )

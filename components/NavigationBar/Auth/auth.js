@@ -8,8 +8,8 @@ import Button from '../../Button'
 function Auth({ auth, className, ...props }) {
     return !auth ? (
         <div className={cn(styles.auth, className)} {...props}>
-            <Button href="/login" auth>
-                Login
+            <Button href="/signin" auth>
+                Sign In
             </Button>
             <Button href="/signup" auth>
                 Sign Up

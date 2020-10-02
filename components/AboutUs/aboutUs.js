@@ -7,11 +7,10 @@ function Abouts({ className, items, ...props }) {
     return (
         <div className={cn(styles.about, className)} {...props}>
             {items.map((item) => {
-                return <About item={item} />
+                return <About key={item.id} item={item} />
             })}
         </div>
     )
 }
 
 export default Abouts
-

@@ -47,12 +47,12 @@ function Prices({ plans, className, ...props }) {
                     ? plans
                           .filter((plan) => plan.subscription === 'Monthly')
                           .map((e) => {
-                              return <PriceTable key={e.price} item={e} />
+                              return <PriceTable key={e.id} item={e} />
                           })
                     : plans
                           .filter((plan) => plan.subscription === 'Annual')
                           .map((e) => {
-                              return <PriceTable key={e.price} item={e} />
+                              return <PriceTable key={e.id} item={e} />
                           })}
             </div>
         </div>
