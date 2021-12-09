@@ -233,5 +233,49 @@ export const PLANS = [
         ],
         href: '/little',
         color: '--c-price-super'
-    }
+    },
+    {
+        id: 'monthlyEnterprise',
+        checked: true,
+        title: 'Enterprise',
+        price: 'Contact US',
+        subscription: 'Monthly',
+        specs: [
+            {
+                text: 'Unlimited Scraping',
+                confirm: true
+            },
+            { text: 'Location Based Scraping', confirm: true },
+            { text: 'Search by List', confirm: true },
+            { text: 'Advanced Export Support', confirm: true },
+            { text: 'Mail Integration', confirm: true },
+            { text: 'Advanced Export Support', confirm: true },
+            { text: 'Multiple Site Language Support', confirm: true },
+            { text: 'Multiple Search Engine Support', confirm: true }
+        ],
+        href: '/little',
+        color: '--c-price-super'
+    },
+    {
+        id: 'annualEnterprise',
+        checked: true,
+        title: 'Enterprise',
+        price: 'Contact US',
+        subscription: 'Annual',
+        specs: [
+            {
+                text: 'Unlimited Scraping',
+                confirm: true
+            },
+            { text: 'Location Based Scraping', confirm: true },
+            { text: 'Search by List', confirm: true },
+            { text: 'Advanced Export Support', confirm: true },
+            { text: 'Mail Integration', confirm: true },
+            { text: 'Advanced Export Support', confirm: true },
+            { text: 'Multiple Site Language Support', confirm: true },
+            { text: 'Multiple Search Engine Support', confirm: true }
+        ],
+        href: '/little',
+        color: '--c-price-super'
+    },
 ]

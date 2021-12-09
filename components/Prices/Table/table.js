@@ -12,7 +12,9 @@ function PriceTable({ className, item, children, ...props }) {
         <div className={cn(styles.priceTable)} style={{ borderColor: `var(${item.color})` }} {...props}>
             <div className={styles.title}>{item.title}</div>
             <div className={styles.price} style={{ background: `var(${item.color})` }}>
-                {item.price}$<span className={styles.subscription}>/{item.subscription}</span>
+                {item.price}
+                {typeof item.price === 'number' && ' $'}
+                {typeof item.price === 'number' && <span className={styles.subscription}>/{item.subscription}</span>}
             </div>
             <div className={styles.spec}>
                 {item.specs.map((spec) => {
@@ -32,7 +34,7 @@ function PriceTable({ className, item, children, ...props }) {
                     )
                 })}
             </div>
-            <Button className={styles.btn} theme href={item.href} style={{ background: `var(${item.color})` }}>
+            <Button className={styles.btn} theme href='mailto:me@ohkamisli.dev' style={{ background: `var(${item.color})` }}>
                 Start Free Trial
             </Button>
         </div>

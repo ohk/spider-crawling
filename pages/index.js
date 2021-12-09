@@ -21,8 +21,6 @@ export default function Home() {
             <Specs specs={SPECS} id="specs" name="specs" />
             <Title>Pricing</Title>
             <Prices plans={PLANS} id="pricing" name="pricing" />
-            <Title>About Us</Title>
-            <Abouts items={ABOUT} id="about" name="specs" />
         </Layout>
     )
 }

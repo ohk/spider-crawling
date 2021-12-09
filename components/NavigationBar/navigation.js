@@ -14,7 +14,7 @@ function NavigationBar({ className, children, ...props }) {
             <div className={cn(styles.navbar, className)}>
                 <Logo>Spider Crawling</Logo>
                 <Menu items={MENU} />
-                <Auth auth={props.auth} />
+                {/*<Auth auth={props.auth} />*/}
             </div>
         </div>
     )
